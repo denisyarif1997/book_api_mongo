@@ -16,14 +16,16 @@ const BookSchema = new Schema({
     required: true
   },
   description: {
-    type: String
+    type: String,
+    required: true
   },
   published_date: {
     type: Date,
     default: Date.now,
   },
   publisher: {
-    type: String
+    type: String,
+    required: true
   },
   updated_date: {
     type: Date,
